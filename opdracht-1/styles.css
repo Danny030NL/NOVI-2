@@ -52,10 +52,12 @@ input[type="submit"] {
 
 /* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
 
-H1,H2,H3,H4,H5 {
-    font-family: 'Noto Sans JP',sans-serif;
+input[type="text"] :focus {
+    border-color: blue;
 }
 
 /* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif */
 
-
+H1,H2,H3,H4,H5,H6 {
+    font-family: 'Noto Sans JP',sans-serif;
+}
