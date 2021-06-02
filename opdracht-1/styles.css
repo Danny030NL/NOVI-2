@@ -15,9 +15,8 @@ img.wrapper {
 }
 
 /* 1.2 Verander de kleur van alle list items in de unordered list naar hsl(110, 29%, 52%) */
-li > a {
+ul li  {
     color: hsl(110,29%,52%)
-
 }
 
 
@@ -29,16 +28,21 @@ li > a {
 
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
 
-a[href*=*]:visited {
+a:visited {
     color: hsl(339,79%,56%)
 }
 
 /* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
-a[href*=*]:hover {
-color: hsl(239,59%,46%)
+a:hover {
+    color: hsl(239,59%,46%)
+}
 
-a[href*=*]:hover {
-color: hsl(239,59%,46%)
+a:link {
+    font-weight: bolder;
+}
+a:visited {
+    color: hsl(189,29%,26%)
+}
 
 /* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
 input[type="submit"] {
@@ -48,7 +52,9 @@ input[type="submit"] {
 
 /* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
 
-
+H1,H2,H3,H4,H5 {
+    font-family: 'Noto Sans JP',sans-serif;
+}
 
 /* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif */
 
